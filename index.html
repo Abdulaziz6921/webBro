@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zay Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- TopNav -->
+    <div class="top_nav">
+      <div class="contact">
+        <p><i class="fa-solid fa-envelope"></i> info@company.com</p>
+        <p><i class="fa-solid fa-phone-flip"></i> 010-020-0340</p>
+      </div>
+
+      <div class="social_media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+
+    <!-- NavBar -->
+    <div class="NavBar">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Contact</a></li>
+      </div>
+      <div class="addition">
+        <div onclick="filterShow()">
+          <i class="fa-solid fa-filter"></i>
+        </div>
+        <i onclick="Open()" class="fa-solid fa-cart-shopping"
+          ><span id="count">0</span></i
+        >
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <!-- Js Fuctions  -->
+      <div class="cart">
+        <i class="fa-solid fa-xmark" onclick="Close()"></i>
+        <h2 id="total">Total:0</h2>
+        <div class="items"></div>
+      </div>
+    </div>
+
+    <!-- Products  -->
+    <div class="product_info">
+      <!-- Filter -->
+      <select class="filter">
+        <option disabled selected value>select an option</option>
+        <option value="smartphones">smartphones</option>
+        <option value="laptops">laptops</option>
+        <option value="fragrances">fragrances</option>
+        <option value="skincare">skincare</option>
+        home-decoration
+        <option value="home-decoration">home-decoration</option>
+        <option value="groceries">groceries</option>
+      </select>
+
+      <div>
+        <p class="header">Featured Product</p>
+        <p class="text_info">
+          Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+
+      <div class="featured_products"></div>
+
+      <div class="btns">
+        <button class="btn2" id="prevBtn">1</button>
+        <button class="btn2" id="nextBtn">2</button>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+      <div class="main_footer">
+        <div class="footer_links">
+          <h1>Logo</h1>
+          <p style="margin-top: 35px">
+            <i class="fa-solid fa-location-dot"></i> 123 Consectetur at ligula
+            10660
+          </p>
+          <p><i class="fa-solid fa-phone-flip"></i> 010-020-0340</p>
+          <p><i class="fa-solid fa-envelope"></i> info@company.com</p>
+        </div>
+        <div class="footer_links">
+          <a href="" class="top_2">Products</a>
+
+          <a href="">Luxury</a>
+          <a href="">Sport Wear</a>
+          <a href="">Men's Shoes</a>
+          <a href="">Women's Shoes</a>
+          <a href="">Popular Dress</a>
+          <a href="">Gym Accessories </a>
+          <a href="">Sport Shoes</a>
+        </div>
+        <div class="footer_links">
+          <a href="" class="top_2">Further Info</a>
+
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop Locations </a>
+          <a href="">FAQs</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script defer src="./app.js"></script>
+</html>
