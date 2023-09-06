@@ -271,7 +271,7 @@ p.text_info {
   transition: 0.5s;
 }
 .featured_product:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
   transition: 0.5s;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -313,8 +313,8 @@ p.text_info {
   margin: 0 auto;
 }
 .name {
-  font-size: 35px;
-  font-weight: 100;
+  font-size: 25px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 .text_info2 {
@@ -441,9 +441,10 @@ a:hover {
 
   .featured_product {
     margin: 20px 0;
-    width: 100%;
+    width: 90%;
     height: 560px;
   }
+
   .main_footer {
     width: 90%;
   }

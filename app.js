@@ -54,7 +54,7 @@ const dataShowing = async () => {
 
    <div class="description_of_featured_product">
      <p class="name">${product.title}</p>
-     <p>An apple mobile which is nothing like apple</p>
+     <p>${product.description}</p>
    </div>`;
 
     let addToCart = document.createElement("button");
